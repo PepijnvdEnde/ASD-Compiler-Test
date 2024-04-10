@@ -5,16 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75034cf5-a270-4f8a-88ae-72fa2cede6d6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/MyGrammar.g4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammarInterpreter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MyGrammar.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/MyGrammar.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammar.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammar.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammar.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammar.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammarBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammarBaseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammarBaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammarBaseVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammarInterpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/MyGrammarInterpreter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammarLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammarLexer.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammarLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammarLexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammarLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammarLexer.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammarListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammarListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammarParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammarParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammarVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammarVisitor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,20 +52,24 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.Main.executor": "Run",
+    "Application.output.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/school/jaar 3/ASD Project/CompilerTest/InterpreterTest/src/main/java/org/example",
+    "last_opened_file_path": "D:/school/jaar 3/ASD Project/CompilerTest/InterpreterTest/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="InterpreterTest" />
@@ -73,9 +83,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="output" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="output" />
+      <module name="InterpreterTest" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main/resources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.output" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.output" />
       </list>
     </recent_temporary>
   </component>
@@ -95,7 +118,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712740040978</updated>
-      <workItem from="1712740042100" duration="1335000" />
+      <workItem from="1712740042100" duration="10130000" />
     </task>
     <servers />
   </component>

@@ -28,6 +28,16 @@ public interface MyGrammarListener extends ParseTreeListener {
 	 */
 	void exitStatement(MyGrammarParser.StatementContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link MyGrammarParser#conditionalLoopStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterConditionalLoopStatement(MyGrammarParser.ConditionalLoopStatementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link MyGrammarParser#conditionalLoopStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitConditionalLoopStatement(MyGrammarParser.ConditionalLoopStatementContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link MyGrammarParser#loopStatement}.
 	 * @param ctx the parse tree
 	 */
@@ -67,4 +77,24 @@ public interface MyGrammarListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitDirection(MyGrammarParser.DirectionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link MyGrammarParser#attribuut}.
+	 * @param ctx the parse tree
+	 */
+	void enterAttribuut(MyGrammarParser.AttribuutContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link MyGrammarParser#attribuut}.
+	 * @param ctx the parse tree
+	 */
+	void exitAttribuut(MyGrammarParser.AttribuutContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link MyGrammarParser#operator}.
+	 * @param ctx the parse tree
+	 */
+	void enterOperator(MyGrammarParser.OperatorContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link MyGrammarParser#operator}.
+	 * @param ctx the parse tree
+	 */
+	void exitOperator(MyGrammarParser.OperatorContext ctx);
 }

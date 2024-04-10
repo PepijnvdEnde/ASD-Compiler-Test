@@ -23,6 +23,12 @@ public interface MyGrammarVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitStatement(MyGrammarParser.StatementContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link MyGrammarParser#conditionalLoopStatement}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitConditionalLoopStatement(MyGrammarParser.ConditionalLoopStatementContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link MyGrammarParser#loopStatement}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
@@ -46,4 +52,16 @@ public interface MyGrammarVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitDirection(MyGrammarParser.DirectionContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link MyGrammarParser#attribuut}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitAttribuut(MyGrammarParser.AttribuutContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link MyGrammarParser#operator}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitOperator(MyGrammarParser.OperatorContext ctx);
 }

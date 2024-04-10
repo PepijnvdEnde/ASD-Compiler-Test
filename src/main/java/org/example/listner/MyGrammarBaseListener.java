@@ -41,6 +41,18 @@ public class MyGrammarBaseListener implements MyGrammarListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterConditionalLoopStatement(MyGrammarParser.ConditionalLoopStatementContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitConditionalLoopStatement(MyGrammarParser.ConditionalLoopStatementContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterLoopStatement(MyGrammarParser.LoopStatementContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -84,6 +96,30 @@ public class MyGrammarBaseListener implements MyGrammarListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitDirection(MyGrammarParser.DirectionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterAttribuut(MyGrammarParser.AttribuutContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitAttribuut(MyGrammarParser.AttribuutContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterOperator(MyGrammarParser.OperatorContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitOperator(MyGrammarParser.OperatorContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

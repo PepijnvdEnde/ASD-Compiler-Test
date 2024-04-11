@@ -22,3 +22,5 @@ attribuut: 'hp'
             | 'str';
 
 operator: KLEINERDAN | GROTERDAN;
+
+

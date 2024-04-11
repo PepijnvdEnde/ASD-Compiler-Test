@@ -44,8 +44,6 @@ public class MyGrammarInterpreter extends MyGrammarBaseVisitor<Void> {
         return null;
     }
 
-
-
     @Override
     public Void visitMeerdereLoopStatement(MyGrammarParser.MeerdereLoopStatementContext ctx) {
         int times = Integer.parseInt(ctx.INT().getText());
@@ -62,7 +60,7 @@ public class MyGrammarInterpreter extends MyGrammarBaseVisitor<Void> {
     public Void visitEnkelLoopStatement(MyGrammarParser.EnkelLoopStatementContext ctx) {
         String direction = ctx.direction().getText();
 
-        javaCode.append("System.out.println(\"lopen ").append(direction).append("\");\n");
+        javaCode.append("System.out.println(\"loop naar ").append(direction).append("\");\n");
 
         return null;
     }

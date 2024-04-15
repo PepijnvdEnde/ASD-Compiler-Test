@@ -8,7 +8,7 @@ public class MyGrammarInterpreter extends MyGrammarBaseVisitor<Void> {
     private StringBuilder javaCode = new StringBuilder();
 
     public MyGrammarInterpreter() {
-        javaCode.append("public class output {\npublic static void main(String[] args) {\n");
+        javaCode.append("public class output {\npublic static void main(String[] args) {\nint hp = 5;\nint spd = 120;\n");
     }
 
     @Override
@@ -50,7 +50,7 @@ public class MyGrammarInterpreter extends MyGrammarBaseVisitor<Void> {
         String direction = ctx.direction().getText();
 
         javaCode.append("for (int i = 0; i < ").append(times).append("; i++) {\n");
-        javaCode.append("    System.out.println(\"loop naar ").append(direction).append("\");\n");
+        javaCode.append("System.out.println(\"loop naar ").append(direction).append("\");\n");
         javaCode.append("}\n");
 
         return null;
@@ -69,3 +69,4 @@ public class MyGrammarInterpreter extends MyGrammarBaseVisitor<Void> {
         return javaCode.toString() + "}\n}";
     }
 }
+

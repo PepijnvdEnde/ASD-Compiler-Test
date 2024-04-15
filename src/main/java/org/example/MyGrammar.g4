@@ -8,8 +8,8 @@ GROTERDAN: 'groter dan';
 
 program: conditionalLoopStatement+ | EOF;
 
+conditionalLoopStatement: 'als' 'mijn' attribuut operator INT 'dan' statement;
 statement: loopStatement;
-conditionalLoopStatement: 'als' 'mijn' attribuut operator INT 'dan' loopStatement;
 loopStatement: meerdereLoopStatement
                 | enkelLoopStatement;
 meerdereLoopStatement: 'loop' INT 'keer' 'naar ' direction;

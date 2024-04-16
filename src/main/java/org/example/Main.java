@@ -21,11 +21,7 @@ public class Main {
             MyGrammarInterpreter interpreter = new MyGrammarInterpreter();
             interpreter.visit(program);
 
-            String javaCode = interpreter.getJavaCode();
-
-            Path outputPath = Paths.get("src/main/resources/output.java");
-            Files.createDirectories(outputPath.getParent());
-            Files.write(outputPath, javaCode.getBytes());
+            interpreter.GenerateBytecode();
         } catch (IOException e) {
             e.printStackTrace();
         }

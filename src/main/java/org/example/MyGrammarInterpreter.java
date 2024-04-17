@@ -97,7 +97,8 @@ public class MyGrammarInterpreter extends MyGrammarBaseVisitor<Void> {
         for (Diagnostic diagnostic : diagnostics.getDiagnostics()) {
             System.out.println(diagnostic);
         }
-        System.out.println("Success: " + success);
+        System.out.println(success ? "Compilation was successful" : "Compilation failed");
+        System.out.println(javaCode);
     }
 }
 

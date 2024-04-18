@@ -4,6 +4,8 @@ import org.antlr.v4.runtime.*;
 import org.example.listner.*;
 
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -19,15 +21,32 @@ public class Main {
             MyGrammarParser.ProgramContext program = parser.program();
 
             MyGrammarInterpreter interpreter = new MyGrammarInterpreter();
+            CustomClassLoader customClassLoader = new CustomClassLoader();
+
             interpreter.visit(program);
 
-            String javaCode = interpreter.getJavaCode();
+            interpreter.GenerateBytecode();
 
-            Path outputPath = Paths.get("src/main/resources/output.java");
-            Files.createDirectories(outputPath.getParent());
-            Files.write(outputPath, javaCode.getBytes());
+            Class<?> clazz = customClassLoader.findClass("output");
+            customClassLoader.loadClass("output");
+            Object instance = clazz.getDeclaredConstructor().newInstance();
+
+            Method method = clazz.getMethod("main", String[].class);
+
+            method.invoke(instance, new String[1]);
+
         } catch (IOException e) {
             e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (InvocationTargetException e) {
+            throw new RuntimeException(e);
+        } catch (InstantiationException e) {
+            throw new RuntimeException(e);
+        } catch (IllegalAccessException e) {
+            throw new RuntimeException(e);
+        } catch (NoSuchMethodException e) {
+            throw new RuntimeException(e);
         }
     }
 }

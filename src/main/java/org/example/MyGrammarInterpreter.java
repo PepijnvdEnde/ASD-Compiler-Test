@@ -13,7 +13,6 @@ import java.util.List;
 
 public class MyGrammarInterpreter extends MyGrammarBaseVisitor<Void> {
     private StringBuilder javaCode = new StringBuilder();
-
     public MyGrammarInterpreter() {
         javaCode.append("public class output {\npublic static void main(String[] args) {\nint hp = 5;\nint spd = 120;\n");
     }

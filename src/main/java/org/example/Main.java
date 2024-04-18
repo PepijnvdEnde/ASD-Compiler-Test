@@ -31,7 +31,7 @@ public class Main {
             customClassLoader.loadClass("output");
             Object instance = clazz.getDeclaredConstructor().newInstance();
 
-            Method method = clazz.getMethod("main", String[].class); // Vervang "myMethod" door de naam van jouw methode
+            Method method = clazz.getMethod("main", String[].class);
 
             method.invoke(instance, new String[1]);
 

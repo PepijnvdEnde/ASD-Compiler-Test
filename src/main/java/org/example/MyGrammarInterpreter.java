@@ -91,8 +91,8 @@ public class MyGrammarInterpreter extends MyGrammarBaseVisitor<Void> {
         }
 
         JavaCompiler.CompilationTask task = compiler.getTask(null, fileManager, diagnostics, null, null, compilationUnits);
-
         boolean success = task.call();
+
         for (Diagnostic diagnostic : diagnostics.getDiagnostics()) {
             System.out.println(diagnostic);
         }

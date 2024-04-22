@@ -2,6 +2,7 @@ package org.example;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -14,20 +15,24 @@ public class CustomClassLoader extends ClassLoader {
     }
 
     private byte[] loadClassFromFile(String fileName)  {
-        InputStream inputStream = getClass().getClassLoader().getResourceAsStream(
-                fileName.replace('.', File.separatorChar) + ".class");
-        byte[] buffer;
-        ByteArrayOutputStream byteStream = new ByteArrayOutputStream();
-        int nextValue = 0;
+        File file = new File("src/main/resources/" + fileName.replace('.', File.separatorChar) + ".class");
+        int length = (int) file.length();
+        byte[] buffer = new byte[length];
+        InputStream inputStream = null;
         try {
-            while ( (nextValue = inputStream.read()) != -1 ) {
-                byteStream.write(nextValue);
-            }
+            inputStream = new FileInputStream(file);
+            inputStream.read(buffer, 0, length);
         } catch (IOException e) {
             e.printStackTrace();
+        } finally {
+            if (inputStream != null) {
+                try {
+                    inputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
         }
-        buffer = byteStream.toByteArray();
-        System.out.println(buffer);
         return buffer;
     }
 }

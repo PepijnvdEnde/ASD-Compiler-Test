@@ -27,6 +27,7 @@ public class Main {
 
             interpreter.GenerateBytecode();
 
+
             Class<?> clazz = customClassLoader.findClass("output");
             customClassLoader.loadClass("output");
             Object instance = clazz.getDeclaredConstructor().newInstance();

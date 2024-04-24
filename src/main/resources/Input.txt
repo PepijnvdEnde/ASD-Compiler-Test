@@ -1,4 +1,200 @@
 wanneer mijn hp kleiner dan 10 dan loop ik naar de kist
 wanneer mijn spd kleiner dan 1000 dan loop ik naar rechts
-
-
+wanneer mijn spd kleiner dan 10100 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 101100 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 100110 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 1001110 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 10111100 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+wanneer mijn hp kleiner dan 10 dan loop ik naar de kist
+wanneer mijn spd kleiner dan 1000 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 10100 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 101100 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 100110 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 1001110 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 10111100 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+wanneer mijn hp kleiner dan 10 dan loop ik naar de kist
+wanneer mijn spd kleiner dan 1000 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 10100 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 101100 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 100110 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 1001110 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 10111100 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+wanneer mijn hp kleiner dan 10 dan loop ik naar de kist
+wanneer mijn spd kleiner dan 1000 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 10100 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 101100 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 100110 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 1001110 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 10111100 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+wanneer mijn hp kleiner dan 10 dan loop ik naar de kist
+wanneer mijn spd kleiner dan 1000 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 10100 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 101100 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 100110 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 1001110 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 10111100 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+    wanneer mijn hp kleiner dan 10 dan loop ik naar de kist
+    wanneer mijn spd kleiner dan 1000 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 10100 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 101100 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 100110 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 1001110 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 10111100 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+    wanneer mijn hp kleiner dan 10 dan loop ik naar de kist
+    wanneer mijn spd kleiner dan 1000 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 10100 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 101100 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 100110 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 1001110 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 10111100 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+    wanneer mijn hp kleiner dan 10 dan loop ik naar de kist
+    wanneer mijn spd kleiner dan 1000 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 10100 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 101100 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 100110 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 1001110 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 10111100 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+    wanneer mijn hp kleiner dan 10 dan loop ik naar de kist
+    wanneer mijn spd kleiner dan 1000 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 10100 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 101100 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 100110 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 1001110 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 10111100 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+    wanneer mijn hp kleiner dan 10 dan loop ik naar de kist
+    wanneer mijn spd kleiner dan 1000 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 10100 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 101100 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 100110 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 1001110 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 10111100 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+    wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+        wanneer mijn hp kleiner dan 10 dan loop ik naar de kist
+        wanneer mijn spd kleiner dan 1000 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 10100 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 101100 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 100110 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 1001110 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 10111100 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+        wanneer mijn hp kleiner dan 10 dan loop ik naar de kist
+        wanneer mijn spd kleiner dan 1000 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 10100 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 101100 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 100110 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 1001110 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 10111100 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+        wanneer mijn hp kleiner dan 10 dan loop ik naar de kist
+        wanneer mijn spd kleiner dan 1000 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 10100 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 101100 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 100110 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 1001110 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 10111100 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+        wanneer mijn hp kleiner dan 10 dan loop ik naar de kist
+        wanneer mijn spd kleiner dan 1000 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 10100 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 101100 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 100110 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 1001110 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 10111100 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+        wanneer mijn hp kleiner dan 10 dan loop ik naar de kist
+        wanneer mijn spd kleiner dan 1000 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 10100 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 101100 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 100110 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 1001110 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 10111100 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+        wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+            wanneer mijn hp kleiner dan 10 dan loop ik naar de kist
+            wanneer mijn spd kleiner dan 1000 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 10100 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 101100 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 100110 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 1001110 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 10111100 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+            wanneer mijn hp kleiner dan 10 dan loop ik naar de kist
+            wanneer mijn spd kleiner dan 1000 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 10100 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 101100 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 100110 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 1001110 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 10111100 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+            wanneer mijn hp kleiner dan 10 dan loop ik naar de kist
+            wanneer mijn spd kleiner dan 1000 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 10100 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 101100 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 100110 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 1001110 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 10111100 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+            wanneer mijn hp kleiner dan 10 dan loop ik naar de kist
+            wanneer mijn spd kleiner dan 1000 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 10100 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 101100 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 100110 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 1001110 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 10111100 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+            wanneer mijn hp kleiner dan 10 dan loop ik naar de kist
+            wanneer mijn spd kleiner dan 1000 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 10100 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 101100 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 100110 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 1001110 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 10111100 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts
+            wanneer mijn spd kleiner dan 101111100 dan loop ik naar rechts

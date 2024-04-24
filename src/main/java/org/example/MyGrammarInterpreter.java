@@ -33,9 +33,7 @@ public class MyGrammarInterpreter extends MyGrammarBaseVisitor<Void> {
             operator = " > ";
         }
 
-        javaCode.append("Field ").append(attribute).append("Field = character.getClass().getField(\"").append(attribute).append("\");\n");
-        javaCode.append("int ").append(attribute).append(" = ").append(attribute).append("Field.getInt(character);\n");
-        javaCode.append("if(").append(attribute).append(operator).append(value).append(") {\n");
+        javaCode.append("if(").append("character.getClass().getField(\"").append(attribute).append("\")").append(".getInt(character)\n").append(operator).append(value).append(") {\n");
 
         if (ctx.actie() != null) {
             visit(ctx.actie());

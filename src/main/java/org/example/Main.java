@@ -13,8 +13,7 @@ public class Main {
 
             CustomClassLoader customClassLoader = new CustomClassLoader();
 
-            customClassLoader.getAction(outputFile,new Player(5, 120, 1000));
-
+            customClassLoader.getAction(outputFile,new Player(50, 101111100, 1000));
         } catch (IOException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {

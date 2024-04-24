@@ -5,23 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75034cf5-a270-4f8a-88ae-72fa2cede6d6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CustomClassLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CustomClassLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MyGrammar.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/MyGrammar.g4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MyGrammarInterpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/MyGrammarInterpreter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammar.interp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammar.tokens" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammarBaseListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammarBaseVisitor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammarLexer.interp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammarLexer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammarLexer.tokens" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammarListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammarParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/listner/MyGrammarVisitor.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Joostie.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +152,7 @@
       <workItem from="1713425472854" duration="4685000" />
       <workItem from="1713773226227" duration="6032000" />
       <workItem from="1713871282561" duration="15001000" />
-      <workItem from="1713949206017" duration="1944000" />
+      <workItem from="1713949206017" duration="7551000" />
     </task>
     <servers />
   </component>

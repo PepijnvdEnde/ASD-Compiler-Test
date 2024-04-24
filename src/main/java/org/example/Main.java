@@ -6,7 +6,7 @@ import java.lang.reflect.InvocationTargetException;
 public class Main {
     public static void main(String[] args) {
         try {
-            String outputFile = "brrr";
+            String outputFile = "Joostie";
             MyGrammarInterpreter interpreter = new MyGrammarInterpreter();
 
             interpreter.generateClass(outputFile, "input");

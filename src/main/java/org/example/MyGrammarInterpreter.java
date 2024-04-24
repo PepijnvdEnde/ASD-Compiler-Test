@@ -22,7 +22,7 @@ public class MyGrammarInterpreter extends MyGrammarBaseVisitor<Void> {
     private String outputFilename;
 
     @Override
-    public Void visitConditionalLoopStatement(MyGrammarParser.ConditionalLoopStatementContext ctx) {
+    public Void visitSpelerssituatie(MyGrammarParser.SpelerssituatieContext ctx) {
         int value = Integer.parseInt(ctx.INT().getText());
         String attribute = ctx.attribuut().getText();
         String operator = ctx.operator().getText();
@@ -37,37 +37,22 @@ public class MyGrammarInterpreter extends MyGrammarBaseVisitor<Void> {
         javaCode.append("int ").append(attribute).append(" = ").append(attribute).append("Field.getInt(character);\n");
         javaCode.append("if(").append(attribute).append(operator).append(value).append(") {\n");
 
-        if (ctx.loopStatement() != null) {
-            visit(ctx.loopStatement());
+        if (ctx.actie() != null) {
+            visit(ctx.actie());
         }
         javaCode.append("}\n");
 
         return null;
     }
 
-    @Override
-    public Void visitMeerdereLoopStatement(MyGrammarParser.MeerdereLoopStatementContext ctx) {
-        int times = Integer.parseInt(ctx.INT().getText());
-        String direction = ctx.direction().getText();
-
-        javaCode.append("for (int i = 0; i < ").append(times).append("; i++) {\n");
-        javaCode.append("try {\n");
-        javaCode.append("character.getClass().getMethod(\"doAction\", String.class).invoke(character, \"loop naar ").append(direction).append("\");\n");
-        javaCode.append("} catch (Exception e) {\n");
-        javaCode.append("throw new RuntimeException(e);\n");
-        javaCode.append("}\n");
-        javaCode.append("}\n");
-
-        return null;
-    }
 
     @Override
-    public Void visitEnkelLoopStatement(MyGrammarParser.EnkelLoopStatementContext ctx) {
-        String direction = ctx.direction().getText();
+    public Void visitLoop(MyGrammarParser.LoopContext ctx) {
+        String direction = ctx.parameter().getText();
 
         javaCode.append("try {\n");
-        javaCode.append("character.getClass().getMethod(\"doAction\", String.class).invoke(character, \"loop naar ").append(direction).append("\");\n");
-        javaCode.append("} catch (Exception e) {\n");
+        javaCode.append("character.getClass().getMethod(\"doAction\", String.class).invoke(character, \"loop ").append(direction).append("\");\n");
+        javaCode.append("return;} catch (Exception e) {\n");
         javaCode.append("throw new RuntimeException(e);\n");
         javaCode.append("}\n");
 
@@ -95,8 +80,8 @@ public class MyGrammarInterpreter extends MyGrammarBaseVisitor<Void> {
         };
 
         Iterable<? extends JavaFileObject> compilationUnits = Arrays.asList(file);
-
         StandardJavaFileManager fileManager = compiler.getStandardFileManager(null, null, null);
+
         try {
             fileManager.setLocation(StandardLocation.CLASS_OUTPUT, Arrays.asList(new File("src/main/resources")));
         } catch (IOException e) {
@@ -109,8 +94,6 @@ public class MyGrammarInterpreter extends MyGrammarBaseVisitor<Void> {
         for (Diagnostic diagnostic : diagnostics.getDiagnostics()) {
             System.out.println(diagnostic);
         }
-
-        System.out.println(success ? "Compilation was successful" : "Compilation failed");
     }
 
     public void generateClass(String outputFilename, String inputFilename) throws IOException {
@@ -122,7 +105,7 @@ public class MyGrammarInterpreter extends MyGrammarBaseVisitor<Void> {
 
         MyGrammarLexer lexer = new MyGrammarLexer(CharStreams.fromString(input));
         MyGrammarParser parser = new MyGrammarParser(new CommonTokenStream(lexer));
-        MyGrammarParser.ProgramContext program = parser.program();
+        MyGrammarParser.AgentContext program = parser.agent();
 
         generateStartCode();
         visit(program);

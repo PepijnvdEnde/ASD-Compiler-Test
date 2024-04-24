@@ -1,3 +1,3 @@
 als mijn hp kleiner dan 10 dan loop naar boven
-als mijn spd groter dan 100 dan loop 5 keer naar links
+als mijn spd groter dan 100 dan loop 6 keer naar links
 

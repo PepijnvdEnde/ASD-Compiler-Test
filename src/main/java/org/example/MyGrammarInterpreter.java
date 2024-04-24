@@ -1,34 +1,41 @@
 package org.example;
 
 
+import org.antlr.v4.runtime.CharStreams;
+import org.antlr.v4.runtime.CommonTokenStream;
 import org.example.listner.MyGrammarBaseVisitor;
+import org.example.listner.MyGrammarLexer;
 import org.example.listner.MyGrammarParser;
 
 import javax.tools.*;
 import java.io.File;
 import java.io.IOException;
 import java.net.URI;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Arrays;
-import java.util.List;
 
 public class MyGrammarInterpreter extends MyGrammarBaseVisitor<Void> {
     private StringBuilder javaCode = new StringBuilder();
-    public MyGrammarInterpreter() {
-        javaCode.append("public class output {\npublic static void main(String[] args) {\nint hp = 5;\nint spd = 120;\n");
-    }
+
+    private String outputFilename;
 
     @Override
     public Void visitConditionalLoopStatement(MyGrammarParser.ConditionalLoopStatementContext ctx) {
         int value = Integer.parseInt(ctx.INT().getText());
-        String attribuut = ctx.attribuut().getText();
+        String attribute = ctx.attribuut().getText();
         String operator = ctx.operator().getText();
+
         if (operator.equals("kleiner dan")) {
             operator = " < ";
         } else if (operator.equals("groter dan")) {
             operator = " > ";
         }
 
-        javaCode.append("if (").append(attribuut).append(operator).append(value ).append(") {\n");
+        javaCode.append("Field ").append(attribute).append("Field = character.getClass().getField(\"").append(attribute).append("\");\n");
+        javaCode.append("int ").append(attribute).append(" = ").append(attribute).append("Field.getInt(character);\n");
+        javaCode.append("if(").append(attribute).append(operator).append(value).append(") {\n");
 
         if (ctx.loopStatement() != null) {
             visit(ctx.loopStatement());
@@ -39,23 +46,16 @@ public class MyGrammarInterpreter extends MyGrammarBaseVisitor<Void> {
     }
 
     @Override
-    public Void visitLoopStatement(MyGrammarParser.LoopStatementContext ctx) {
-        if (ctx.meerdereLoopStatement() != null) {
-            visit(ctx.meerdereLoopStatement());
-        } else if (ctx.enkelLoopStatement() != null) {
-            visit(ctx.enkelLoopStatement());
-        }
-
-        return null;
-    }
-
-    @Override
     public Void visitMeerdereLoopStatement(MyGrammarParser.MeerdereLoopStatementContext ctx) {
         int times = Integer.parseInt(ctx.INT().getText());
         String direction = ctx.direction().getText();
 
         javaCode.append("for (int i = 0; i < ").append(times).append("; i++) {\n");
-        javaCode.append("System.out.println(\"loop naar ").append(direction).append("\");\n");
+        javaCode.append("try {\n");
+        javaCode.append("character.getClass().getMethod(\"doAction\", String.class).invoke(character, \"loop naar ").append(direction).append("\");\n");
+        javaCode.append("} catch (Exception e) {\n");
+        javaCode.append("throw new RuntimeException(e);\n");
+        javaCode.append("}\n");
         javaCode.append("}\n");
 
         return null;
@@ -65,19 +65,32 @@ public class MyGrammarInterpreter extends MyGrammarBaseVisitor<Void> {
     public Void visitEnkelLoopStatement(MyGrammarParser.EnkelLoopStatementContext ctx) {
         String direction = ctx.direction().getText();
 
-        javaCode.append("System.out.println(\"loop naar ").append(direction).append("\");\n");
+        javaCode.append("try {\n");
+        javaCode.append("character.getClass().getMethod(\"doAction\", String.class).invoke(character, \"loop naar ").append(direction).append("\");\n");
+        javaCode.append("} catch (Exception e) {\n");
+        javaCode.append("throw new RuntimeException(e);\n");
+        javaCode.append("}\n");
 
         return null;
     }
 
     public void GenerateBytecode() {
+        javaCode.append("} catch (NoSuchFieldException | IllegalAccessException e) {\n");
+        javaCode.append("throw new RuntimeException(e);\n");
+        javaCode.append("}\n");
+        javaCode.append("}\n");
+        javaCode.append("}\n");
+
+        compileCode();
+    }
+
+    private void compileCode() {
         JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
         DiagnosticCollector<JavaFileObject> diagnostics = new DiagnosticCollector<>();
-
         JavaFileObject file = new SimpleJavaFileObject(
-                URI.create("string:///output.java"), JavaFileObject.Kind.SOURCE) {
+                URI.create("string:///" + outputFilename + ".java"), JavaFileObject.Kind.SOURCE) {
             public CharSequence getCharContent(boolean ignoreEncodingErrors) {
-                return javaCode.toString() + "}\n}";
+                return javaCode;
             }
         };
 
@@ -87,7 +100,7 @@ public class MyGrammarInterpreter extends MyGrammarBaseVisitor<Void> {
         try {
             fileManager.setLocation(StandardLocation.CLASS_OUTPUT, Arrays.asList(new File("src/main/resources")));
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
 
         JavaCompiler.CompilationTask task = compiler.getTask(null, fileManager, diagnostics, null, null, compilationUnits);
@@ -96,8 +109,32 @@ public class MyGrammarInterpreter extends MyGrammarBaseVisitor<Void> {
         for (Diagnostic diagnostic : diagnostics.getDiagnostics()) {
             System.out.println(diagnostic);
         }
+
         System.out.println(success ? "Compilation was successful" : "Compilation failed");
-        System.out.println(javaCode);
+    }
+
+    public void generateClass(String outputFilename, String inputFilename) throws IOException {
+        this.outputFilename = outputFilename;
+
+        String basepath = "src/main/resources/";
+        Path inputPath = Paths.get(basepath + inputFilename + ".txt");
+        String input = Files.readString(inputPath);
+
+        MyGrammarLexer lexer = new MyGrammarLexer(CharStreams.fromString(input));
+        MyGrammarParser parser = new MyGrammarParser(new CommonTokenStream(lexer));
+        MyGrammarParser.ProgramContext program = parser.program();
+
+        generateStartCode();
+        visit(program);
+        GenerateBytecode();
+    }
+
+    private void generateStartCode() {
+        javaCode.append("import java.lang.reflect.Field;\n");
+        javaCode.append("public class ");
+        javaCode.append(outputFilename);
+        javaCode.append("{\n");
+        javaCode.append("public static <T> void getAction(T character) {\n");
+        javaCode.append("try {\n");
     }
 }
-

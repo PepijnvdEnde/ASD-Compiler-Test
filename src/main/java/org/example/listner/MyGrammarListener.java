@@ -1,4 +1,4 @@
-// Generated from D:/school/jaar 3/ASD Project/CompilerTest/InterpreterTest/src/main/java/org/example/MyGrammar.g4 by ANTLR 4.13.1
+// Generated from C:/Users/woute/Documents/GitHub/ASD-Compiler-Test/src/main/java/org/example/MyGrammar.g4 by ANTLR 4.13.1
 package org.example.listner;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
@@ -8,75 +8,85 @@ import org.antlr.v4.runtime.tree.ParseTreeListener;
  */
 public interface MyGrammarListener extends ParseTreeListener {
 	/**
-	 * Enter a parse tree produced by {@link MyGrammarParser#program}.
+	 * Enter a parse tree produced by {@link MyGrammarParser#agent}.
 	 * @param ctx the parse tree
 	 */
-	void enterProgram(MyGrammarParser.ProgramContext ctx);
+	void enterAgent(MyGrammarParser.AgentContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link MyGrammarParser#program}.
+	 * Exit a parse tree produced by {@link MyGrammarParser#agent}.
 	 * @param ctx the parse tree
 	 */
-	void exitProgram(MyGrammarParser.ProgramContext ctx);
+	void exitAgent(MyGrammarParser.AgentContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link MyGrammarParser#statement}.
+	 * Enter a parse tree produced by {@link MyGrammarParser#rule}.
 	 * @param ctx the parse tree
 	 */
-	void enterStatement(MyGrammarParser.StatementContext ctx);
+	void enterRule(MyGrammarParser.RuleContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link MyGrammarParser#statement}.
+	 * Exit a parse tree produced by {@link MyGrammarParser#rule}.
 	 * @param ctx the parse tree
 	 */
-	void exitStatement(MyGrammarParser.StatementContext ctx);
+	void exitRule(MyGrammarParser.RuleContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link MyGrammarParser#conditionalLoopStatement}.
+	 * Enter a parse tree produced by {@link MyGrammarParser#omgevingssituatie}.
 	 * @param ctx the parse tree
 	 */
-	void enterConditionalLoopStatement(MyGrammarParser.ConditionalLoopStatementContext ctx);
+	void enterOmgevingssituatie(MyGrammarParser.OmgevingssituatieContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link MyGrammarParser#conditionalLoopStatement}.
+	 * Exit a parse tree produced by {@link MyGrammarParser#omgevingssituatie}.
 	 * @param ctx the parse tree
 	 */
-	void exitConditionalLoopStatement(MyGrammarParser.ConditionalLoopStatementContext ctx);
+	void exitOmgevingssituatie(MyGrammarParser.OmgevingssituatieContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link MyGrammarParser#loopStatement}.
+	 * Enter a parse tree produced by {@link MyGrammarParser#spelerssituatie}.
 	 * @param ctx the parse tree
 	 */
-	void enterLoopStatement(MyGrammarParser.LoopStatementContext ctx);
+	void enterSpelerssituatie(MyGrammarParser.SpelerssituatieContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link MyGrammarParser#loopStatement}.
+	 * Exit a parse tree produced by {@link MyGrammarParser#spelerssituatie}.
 	 * @param ctx the parse tree
 	 */
-	void exitLoopStatement(MyGrammarParser.LoopStatementContext ctx);
+	void exitSpelerssituatie(MyGrammarParser.SpelerssituatieContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link MyGrammarParser#meerdereLoopStatement}.
+	 * Enter a parse tree produced by {@link MyGrammarParser#actie}.
 	 * @param ctx the parse tree
 	 */
-	void enterMeerdereLoopStatement(MyGrammarParser.MeerdereLoopStatementContext ctx);
+	void enterActie(MyGrammarParser.ActieContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link MyGrammarParser#meerdereLoopStatement}.
+	 * Exit a parse tree produced by {@link MyGrammarParser#actie}.
 	 * @param ctx the parse tree
 	 */
-	void exitMeerdereLoopStatement(MyGrammarParser.MeerdereLoopStatementContext ctx);
+	void exitActie(MyGrammarParser.ActieContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link MyGrammarParser#enkelLoopStatement}.
+	 * Enter a parse tree produced by {@link MyGrammarParser#loop}.
 	 * @param ctx the parse tree
 	 */
-	void enterEnkelLoopStatement(MyGrammarParser.EnkelLoopStatementContext ctx);
+	void enterLoop(MyGrammarParser.LoopContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link MyGrammarParser#enkelLoopStatement}.
+	 * Exit a parse tree produced by {@link MyGrammarParser#loop}.
 	 * @param ctx the parse tree
 	 */
-	void exitEnkelLoopStatement(MyGrammarParser.EnkelLoopStatementContext ctx);
+	void exitLoop(MyGrammarParser.LoopContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link MyGrammarParser#direction}.
+	 * Enter a parse tree produced by {@link MyGrammarParser#parameter}.
 	 * @param ctx the parse tree
 	 */
-	void enterDirection(MyGrammarParser.DirectionContext ctx);
+	void enterParameter(MyGrammarParser.ParameterContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link MyGrammarParser#direction}.
+	 * Exit a parse tree produced by {@link MyGrammarParser#parameter}.
 	 * @param ctx the parse tree
 	 */
-	void exitDirection(MyGrammarParser.DirectionContext ctx);
+	void exitParameter(MyGrammarParser.ParameterContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link MyGrammarParser#operator}.
+	 * @param ctx the parse tree
+	 */
+	void enterOperator(MyGrammarParser.OperatorContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link MyGrammarParser#operator}.
+	 * @param ctx the parse tree
+	 */
+	void exitOperator(MyGrammarParser.OperatorContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link MyGrammarParser#attribuut}.
 	 * @param ctx the parse tree
@@ -88,13 +98,23 @@ public interface MyGrammarListener extends ParseTreeListener {
 	 */
 	void exitAttribuut(MyGrammarParser.AttribuutContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link MyGrammarParser#operator}.
+	 * Enter a parse tree produced by {@link MyGrammarParser#handeling}.
 	 * @param ctx the parse tree
 	 */
-	void enterOperator(MyGrammarParser.OperatorContext ctx);
+	void enterHandeling(MyGrammarParser.HandelingContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link MyGrammarParser#operator}.
+	 * Exit a parse tree produced by {@link MyGrammarParser#handeling}.
 	 * @param ctx the parse tree
 	 */
-	void exitOperator(MyGrammarParser.OperatorContext ctx);
+	void exitHandeling(MyGrammarParser.HandelingContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link MyGrammarParser#richting}.
+	 * @param ctx the parse tree
+	 */
+	void enterRichting(MyGrammarParser.RichtingContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link MyGrammarParser#richting}.
+	 * @param ctx the parse tree
+	 */
+	void exitRichting(MyGrammarParser.RichtingContext ctx);
 }

@@ -1,4 +1,4 @@
-// Generated from D:/school/jaar 3/ASD Project/CompilerTest/InterpreterTest/src/main/java/org/example/MyGrammar.g4 by ANTLR 4.13.1
+// Generated from C:/Users/woute/Documents/GitHub/ASD-Compiler-Test/src/main/java/org/example/MyGrammar.g4 by ANTLR 4.13.1
 package org.example.listner;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
@@ -11,47 +11,53 @@ import org.antlr.v4.runtime.tree.ParseTreeVisitor;
  */
 public interface MyGrammarVisitor<T> extends ParseTreeVisitor<T> {
 	/**
-	 * Visit a parse tree produced by {@link MyGrammarParser#program}.
+	 * Visit a parse tree produced by {@link MyGrammarParser#agent}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitProgram(MyGrammarParser.ProgramContext ctx);
+	T visitAgent(MyGrammarParser.AgentContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link MyGrammarParser#statement}.
+	 * Visit a parse tree produced by {@link MyGrammarParser#rule}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitStatement(MyGrammarParser.StatementContext ctx);
+	T visitRule(MyGrammarParser.RuleContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link MyGrammarParser#conditionalLoopStatement}.
+	 * Visit a parse tree produced by {@link MyGrammarParser#omgevingssituatie}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitConditionalLoopStatement(MyGrammarParser.ConditionalLoopStatementContext ctx);
+	T visitOmgevingssituatie(MyGrammarParser.OmgevingssituatieContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link MyGrammarParser#loopStatement}.
+	 * Visit a parse tree produced by {@link MyGrammarParser#spelerssituatie}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitLoopStatement(MyGrammarParser.LoopStatementContext ctx);
+	T visitSpelerssituatie(MyGrammarParser.SpelerssituatieContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link MyGrammarParser#meerdereLoopStatement}.
+	 * Visit a parse tree produced by {@link MyGrammarParser#actie}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitMeerdereLoopStatement(MyGrammarParser.MeerdereLoopStatementContext ctx);
+	T visitActie(MyGrammarParser.ActieContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link MyGrammarParser#enkelLoopStatement}.
+	 * Visit a parse tree produced by {@link MyGrammarParser#loop}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitEnkelLoopStatement(MyGrammarParser.EnkelLoopStatementContext ctx);
+	T visitLoop(MyGrammarParser.LoopContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link MyGrammarParser#direction}.
+	 * Visit a parse tree produced by {@link MyGrammarParser#parameter}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitDirection(MyGrammarParser.DirectionContext ctx);
+	T visitParameter(MyGrammarParser.ParameterContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link MyGrammarParser#operator}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitOperator(MyGrammarParser.OperatorContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link MyGrammarParser#attribuut}.
 	 * @param ctx the parse tree
@@ -59,9 +65,15 @@ public interface MyGrammarVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitAttribuut(MyGrammarParser.AttribuutContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link MyGrammarParser#operator}.
+	 * Visit a parse tree produced by {@link MyGrammarParser#handeling}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitOperator(MyGrammarParser.OperatorContext ctx);
+	T visitHandeling(MyGrammarParser.HandelingContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link MyGrammarParser#richting}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitRichting(MyGrammarParser.RichtingContext ctx);
 }
